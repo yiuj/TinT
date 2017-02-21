@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_other"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tint.Settings" >
+       
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/clickedback" />
+
+	 <ImageView
+	     android:id="@+id/imageView1"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentTop="true"
+	     android:layout_centerHorizontal="true"
+	     android:src="@drawable/xtremeinstructionstitle" />
+
+	 <TextView
+	     android:id="@+id/instructionsText"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentLeft="true"
+	     android:layout_below="@+id/imageView1"
+	     android:text="\t Players alternate placing their symbols in the grid spaces. Whoever has symbols placed in three horizontally, vertically, or diagonally contiguous spaces of one grid wins that grid. To win the game, a player must win five grids . \n \t There are nine positions in each grid and nine grids in the game. If a player places a symbol in the top left position of a specific grid, the other player must then put a symbol in the top left grid of the game. The process applies to the other positions of each grid. \n \t If a player wins one of the grids, that grid cannot be filled with symbols anymore. Later, if a player is sent to that particular grid by the other person, the player may choose to put a symbol in any of the remaining grids."
+	     android:textAppearance="?android:attr/textAppearanceLarge"
+	     android:textColor="#00FFEE"
+	     android:textSize="13sp" />
+
+    </RelativeLayout>
+    
